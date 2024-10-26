@@ -1,0 +1,36 @@
+com.android.calculator2.Calculator
+com.android.calculator2.CalculatorGoogle
+com.android.calculator2.Licenses
+com.google.android.gms.common.api.GoogleApiActivity
+com.android.calculator2.CalculatorTileService
+com.google.android.gms.measurement.AppMeasurementService
+com.google.android.gms.measurement.AppMeasurementJobService
+com.google.firebase.components.ComponentDiscoveryService
+
+
+
+${el1} =    Set Variable     accessibility_id=2
+Click Element    ${el1}
+${el2} =    Set Variable     accessibility_id=plus
+Click Element    ${el2}
+${el3} =    Set Variable     accessibility_id=3
+Click Element    ${el3}
+${el4} =    Set Variable     accessibility_id=equals
+Click Element    ${el4}
+${el5} =    Set Variable     id=com.google.android.calculator:id/result_final
+Click Element    ${el5}
+${el6} =    Set Variable     accessibility_id=clear
+Click Element    ${el6}
+${el7} =    Set Variable     accessibility_id=minus
+Click Element    ${el7}
+${el8} =    Set Variable     accessibility_id=multiply
+Click Element    ${el8}
+${el9} =    Set Variable     accessibility_id=divide
+Click Element    ${el9}
+${el10} =    Set Variable     accessibility_id=plus
+Click Element    ${el10}
+${el11} =    Set Variable     accessibility_id=clear
+Click Element    ${el11}
+
+
+Set-Item -Path Env:\SAUCE_ACCESS_KEY -Value 'd444401d-d411-4bdc-a474-3987ff12a169'
