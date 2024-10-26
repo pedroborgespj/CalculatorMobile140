@@ -31,6 +31,3 @@ ${el10} =    Set Variable     accessibility_id=plus
 Click Element    ${el10}
 ${el11} =    Set Variable     accessibility_id=clear
 Click Element    ${el11}
-
-
-Set-Item -Path Env:\SAUCE_ACCESS_KEY -Value 'd444401d-d411-4bdc-a474-3987ff12a169'

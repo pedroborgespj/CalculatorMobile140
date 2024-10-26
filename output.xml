@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.11.2 on win32)" generated="2024-10-26T14:16:28.498323" rpa="false" schemaversion="5">
-<suite id="s1" name="Multiplicacao" source="C:\Iterasys\CalculatorMobile140\tests\mobile\multiplicacao.robot">
+<robot generator="Robot 7.1.1 (Python 3.11.2 on win32)" generated="2024-10-26T14:23:53.991294" rpa="false" schemaversion="5">
+<suite id="s1" name="Divisao" source="C:\Iterasys\CalculatorMobile140\tests\mobile\divisao.robot">
 <kw name="Sauce Labs Open Application" owner="capabilities" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -22,475 +22,475 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-10-26T14:16:28.686210" elapsed="44.774135"/>
+<status status="PASS" start="2024-10-26T14:23:54.186241" elapsed="40.456613"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:16:28.686210" elapsed="44.774135"/>
+<status status="PASS" start="2024-10-26T14:23:54.186241" elapsed="40.456613"/>
 </kw>
 <test id="s1-t1" name="TC001" line="12">
-<kw name="Multiplicacao dois numeros - 1 digito">
+<kw name="Divisao dois numeros - 1 digito">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:13.460345" level="INFO">${n1} = accessibility_id=7</msg>
+<msg time="2024-10-26T14:24:34.642854" level="INFO">${n1} = accessibility_id=7</msg>
 <var>${n1}</var>
 <arg>accessibility_id=${number_1}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:13.460345" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:34.642854" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:13.460345" level="INFO">Clicking element 'accessibility_id=7'.</msg>
+<msg time="2024-10-26T14:24:34.642854" level="INFO">Clicking element 'accessibility_id=7'.</msg>
 <arg>${n1}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:13.460345" elapsed="1.675074"/>
+<status status="PASS" start="2024-10-26T14:24:34.642854" elapsed="1.760096"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:15.135933" level="INFO">${multiply} = accessibility_id=multiply</msg>
-<var>${multiply}</var>
-<arg>accessibility_id=multiply</arg>
+<msg time="2024-10-26T14:24:36.402950" level="INFO">${divide} = accessibility_id=divide</msg>
+<var>${divide}</var>
+<arg>accessibility_id=divide</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:15.135933" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:36.402950" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:15.136958" level="INFO">Clicking element 'accessibility_id=multiply'.</msg>
-<arg>${multiply}</arg>
+<msg time="2024-10-26T14:24:36.402950" level="INFO">Clicking element 'accessibility_id=divide'.</msg>
+<arg>${divide}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:15.135933" elapsed="1.350560"/>
+<status status="PASS" start="2024-10-26T14:24:36.402950" elapsed="1.378556"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:16.486493" level="INFO">${n2} = accessibility_id=3</msg>
+<msg time="2024-10-26T14:24:37.781506" level="INFO">${n2} = accessibility_id=1</msg>
 <var>${n2}</var>
 <arg>accessibility_id=${number_2}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:16.486493" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:37.781506" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:16.486493" level="INFO">Clicking element 'accessibility_id=3'.</msg>
+<msg time="2024-10-26T14:24:37.781506" level="INFO">Clicking element 'accessibility_id=1'.</msg>
 <arg>${n2}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:16.486493" elapsed="1.301886"/>
+<status status="PASS" start="2024-10-26T14:24:37.781506" elapsed="1.329666"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:17.788379" level="INFO">${equals} = accessibility_id=equals</msg>
+<msg time="2024-10-26T14:24:39.111172" level="INFO">${equals} = accessibility_id=equals</msg>
 <var>${equals}</var>
 <arg>accessibility_id=equals</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:17.788379" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:39.111172" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:17.788379" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<msg time="2024-10-26T14:24:39.111172" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
 <arg>${equals}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:17.788379" elapsed="1.658256"/>
+<status status="PASS" start="2024-10-26T14:24:39.111172" elapsed="1.686881"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:19.446635" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:24:40.798053" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
 <var>${result}</var>
 <arg>id=com.google.android.calculator:id/result_final</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:19.446635" elapsed="0.000624"/>
+<status status="PASS" start="2024-10-26T14:24:40.798053" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:19.448279" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '21'.</msg>
-<msg time="2024-10-26T14:17:19.927900" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:24:40.798053" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '7'.</msg>
+<msg time="2024-10-26T14:24:41.299846" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
 <arg>${result}</arg>
 <arg>${result_expected}</arg>
 <doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="PASS" start="2024-10-26T14:17:19.447259" elapsed="0.480641"/>
+<status status="PASS" start="2024-10-26T14:24:40.798053" elapsed="0.501793"/>
 </kw>
 <arg>7</arg>
-<arg>3</arg>
-<arg>21</arg>
-<status status="PASS" start="2024-10-26T14:17:13.460345" elapsed="6.467555"/>
+<arg>1</arg>
+<arg>7</arg>
+<status status="PASS" start="2024-10-26T14:24:34.642854" elapsed="6.656992"/>
 </kw>
 <kw name="Limpar calculadora" owner="capabilities" type="TEARDOWN">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:19.927900" level="INFO">${clear} = accessibility_id=clear</msg>
+<msg time="2024-10-26T14:24:41.299846" level="INFO">${clear} = accessibility_id=clear</msg>
 <var>${clear}</var>
 <arg>accessibility_id=clear</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:19.927900" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:41.299846" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:19.927900" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
+<msg time="2024-10-26T14:24:41.299846" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
 <arg>${clear}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:19.927900" elapsed="1.260066"/>
+<status status="PASS" start="2024-10-26T14:24:41.299846" elapsed="1.349124"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:19.927900" elapsed="1.260066"/>
+<status status="PASS" start="2024-10-26T14:24:41.299846" elapsed="1.349124"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:13.460345" elapsed="7.727621"/>
+<status status="PASS" start="2024-10-26T14:24:34.642854" elapsed="8.006116"/>
 </test>
 <test id="s1-t2" name="TC002" line="13">
-<kw name="Multiplicacao dois numeros - 1 digito">
+<kw name="Divisao dois numeros - 1 digito">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:21.203589" level="INFO">${n1} = accessibility_id=0</msg>
+<msg time="2024-10-26T14:24:42.648970" level="INFO">${n1} = accessibility_id=0</msg>
 <var>${n1}</var>
 <arg>accessibility_id=${number_1}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:21.203589" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:42.648970" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:21.203589" level="INFO">Clicking element 'accessibility_id=0'.</msg>
+<msg time="2024-10-26T14:24:42.648970" level="INFO">Clicking element 'accessibility_id=0'.</msg>
 <arg>${n1}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:21.203589" elapsed="1.273924"/>
+<status status="PASS" start="2024-10-26T14:24:42.648970" elapsed="1.321433"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:22.477513" level="INFO">${multiply} = accessibility_id=multiply</msg>
-<var>${multiply}</var>
-<arg>accessibility_id=multiply</arg>
+<msg time="2024-10-26T14:24:43.970403" level="INFO">${divide} = accessibility_id=divide</msg>
+<var>${divide}</var>
+<arg>accessibility_id=divide</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:22.477513" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:43.970403" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:22.484836" level="INFO">Clicking element 'accessibility_id=multiply'.</msg>
-<arg>${multiply}</arg>
+<msg time="2024-10-26T14:24:43.970403" level="INFO">Clicking element 'accessibility_id=divide'.</msg>
+<arg>${divide}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:22.477513" elapsed="1.332980"/>
+<status status="PASS" start="2024-10-26T14:24:43.970403" elapsed="1.303060"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:23.810493" level="INFO">${n2} = accessibility_id=0</msg>
+<msg time="2024-10-26T14:24:45.274005" level="INFO">${n2} = accessibility_id=3</msg>
 <var>${n2}</var>
 <arg>accessibility_id=${number_2}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:23.810493" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:45.274005" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:23.810493" level="INFO">Clicking element 'accessibility_id=0'.</msg>
+<msg time="2024-10-26T14:24:45.275538" level="INFO">Clicking element 'accessibility_id=3'.</msg>
 <arg>${n2}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:23.810493" elapsed="1.286124"/>
+<status status="PASS" start="2024-10-26T14:24:45.274005" elapsed="1.300938"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:25.097614" level="INFO">${equals} = accessibility_id=equals</msg>
+<msg time="2024-10-26T14:24:46.574943" level="INFO">${equals} = accessibility_id=equals</msg>
 <var>${equals}</var>
 <arg>accessibility_id=equals</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:25.097614" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:46.574943" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:25.098611" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<msg time="2024-10-26T14:24:46.574943" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
 <arg>${equals}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:25.097614" elapsed="1.639904"/>
+<status status="PASS" start="2024-10-26T14:24:46.574943" elapsed="1.667421"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:26.737518" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:24:48.242364" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
 <var>${result}</var>
 <arg>id=com.google.android.calculator:id/result_final</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:26.737518" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:48.242364" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:26.737518" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '0'.</msg>
-<msg time="2024-10-26T14:17:27.208310" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:24:48.242364" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '0'.</msg>
+<msg time="2024-10-26T14:24:48.707068" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
 <arg>${result}</arg>
 <arg>${result_expected}</arg>
 <doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="PASS" start="2024-10-26T14:17:26.737518" elapsed="0.470792"/>
+<status status="PASS" start="2024-10-26T14:24:48.242364" elapsed="0.464704"/>
 </kw>
 <arg>0</arg>
+<arg>3</arg>
 <arg>0</arg>
-<arg>0</arg>
-<status status="PASS" start="2024-10-26T14:17:21.187966" elapsed="6.020344"/>
+<status status="PASS" start="2024-10-26T14:24:42.648970" elapsed="6.058098"/>
 </kw>
 <kw name="Limpar calculadora" owner="capabilities" type="TEARDOWN">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:27.208310" level="INFO">${clear} = accessibility_id=clear</msg>
+<msg time="2024-10-26T14:24:48.722688" level="INFO">${clear} = accessibility_id=clear</msg>
 <var>${clear}</var>
 <arg>accessibility_id=clear</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:27.208310" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:48.707068" elapsed="0.015620"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:27.208310" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
+<msg time="2024-10-26T14:24:48.722688" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
 <arg>${clear}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:27.208310" elapsed="1.241485"/>
+<status status="PASS" start="2024-10-26T14:24:48.722688" elapsed="1.275397"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:27.208310" elapsed="1.241485"/>
+<status status="PASS" start="2024-10-26T14:24:48.707068" elapsed="1.291017"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:21.187966" elapsed="7.261829"/>
+<status status="PASS" start="2024-10-26T14:24:42.648970" elapsed="7.349115"/>
 </test>
 <test id="s1-t3" name="TC003" line="14">
-<kw name="Multiplicacao dois numeros - 1 digito">
+<kw name="Divisao dois numeros - 1 digito">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:28.449795" level="INFO">${n1} = accessibility_id=3</msg>
+<msg time="2024-10-26T14:24:49.999786" level="INFO">${n1} = accessibility_id=4</msg>
 <var>${n1}</var>
 <arg>accessibility_id=${number_1}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:28.449795" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:49.999786" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:28.449795" level="INFO">Clicking element 'accessibility_id=3'.</msg>
+<msg time="2024-10-26T14:24:50.000843" level="INFO">Clicking element 'accessibility_id=4'.</msg>
 <arg>${n1}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:28.449795" elapsed="1.239834"/>
+<status status="PASS" start="2024-10-26T14:24:49.999786" elapsed="1.283440"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:29.689629" level="INFO">${multiply} = accessibility_id=multiply</msg>
-<var>${multiply}</var>
-<arg>accessibility_id=multiply</arg>
+<msg time="2024-10-26T14:24:51.283226" level="INFO">${divide} = accessibility_id=divide</msg>
+<var>${divide}</var>
+<arg>accessibility_id=divide</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:29.689629" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:51.283226" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:29.689629" level="INFO">Clicking element 'accessibility_id=multiply'.</msg>
-<arg>${multiply}</arg>
+<msg time="2024-10-26T14:24:51.283226" level="INFO">Clicking element 'accessibility_id=divide'.</msg>
+<arg>${divide}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:29.689629" elapsed="1.253373"/>
+<status status="PASS" start="2024-10-26T14:24:51.283226" elapsed="1.291597"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:30.947122" level="INFO">${n2} = accessibility_id=3</msg>
+<msg time="2024-10-26T14:24:52.574823" level="INFO">${n2} = accessibility_id=2</msg>
 <var>${n2}</var>
 <arg>accessibility_id=${number_2}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:30.943002" elapsed="0.004120"/>
+<status status="PASS" start="2024-10-26T14:24:52.574823" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:30.947122" level="INFO">Clicking element 'accessibility_id=3'.</msg>
+<msg time="2024-10-26T14:24:52.574823" level="INFO">Clicking element 'accessibility_id=2'.</msg>
 <arg>${n2}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:30.947122" elapsed="1.274063"/>
+<status status="PASS" start="2024-10-26T14:24:52.574823" elapsed="1.286190"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:32.221406" level="INFO">${equals} = accessibility_id=equals</msg>
+<msg time="2024-10-26T14:24:53.861013" level="INFO">${equals} = accessibility_id=equals</msg>
 <var>${equals}</var>
 <arg>accessibility_id=equals</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:32.221185" elapsed="0.000221"/>
+<status status="PASS" start="2024-10-26T14:24:53.861013" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:32.221406" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<msg time="2024-10-26T14:24:53.861013" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
 <arg>${equals}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:32.221406" elapsed="1.640856"/>
+<status status="PASS" start="2024-10-26T14:24:53.861013" elapsed="1.623058"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:33.862262" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:24:55.484071" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
 <var>${result}</var>
 <arg>id=com.google.android.calculator:id/result_final</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:33.862262" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:55.484071" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:33.870681" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '9'.</msg>
-<msg time="2024-10-26T14:17:34.337799" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:24:55.484071" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '2'.</msg>
+<msg time="2024-10-26T14:24:55.979363" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
 <arg>${result}</arg>
 <arg>${result_expected}</arg>
 <doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="PASS" start="2024-10-26T14:17:33.862262" elapsed="0.475537"/>
-</kw>
-<arg>3</arg>
-<arg>3</arg>
-<arg>9</arg>
-<status status="PASS" start="2024-10-26T14:17:28.449795" elapsed="5.888004"/>
-</kw>
-<kw name="Limpar calculadora" owner="capabilities" type="TEARDOWN">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:34.337799" level="INFO">${clear} = accessibility_id=clear</msg>
-<var>${clear}</var>
-<arg>accessibility_id=clear</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:34.337799" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:34.337799" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
-<arg>${clear}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:34.337799" elapsed="1.248610"/>
-</kw>
-<status status="PASS" start="2024-10-26T14:17:34.337799" elapsed="1.248610"/>
-</kw>
-<status status="PASS" start="2024-10-26T14:17:28.449795" elapsed="7.136614"/>
-</test>
-<test id="s1-t4" name="TC004" line="15">
-<kw name="Multiplicacao dois numeros - 1 digito">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:35.586409" level="INFO">${n1} = accessibility_id=4</msg>
-<var>${n1}</var>
-<arg>accessibility_id=${number_1}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:35.586409" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:35.586409" level="INFO">Clicking element 'accessibility_id=4'.</msg>
-<arg>${n1}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:35.586409" elapsed="1.241722"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:36.828131" level="INFO">${multiply} = accessibility_id=multiply</msg>
-<var>${multiply}</var>
-<arg>accessibility_id=multiply</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:36.828131" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:36.828131" level="INFO">Clicking element 'accessibility_id=multiply'.</msg>
-<arg>${multiply}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:36.828131" elapsed="1.231512"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:38.060151" level="INFO">${n2} = accessibility_id=0</msg>
-<var>${n2}</var>
-<arg>accessibility_id=${number_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:38.060151" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:38.061173" level="INFO">Clicking element 'accessibility_id=0'.</msg>
-<arg>${n2}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:38.060151" elapsed="1.265991"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:39.326142" level="INFO">${equals} = accessibility_id=equals</msg>
-<var>${equals}</var>
-<arg>accessibility_id=equals</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:39.326142" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:39.326142" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
-<arg>${equals}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:39.326142" elapsed="1.705293"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:41.031435" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
-<var>${result}</var>
-<arg>id=com.google.android.calculator:id/result_final</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:41.031435" elapsed="0.000000"/>
-</kw>
-<kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:41.031435" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '0'.</msg>
-<msg time="2024-10-26T14:17:41.486450" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
-<arg>${result}</arg>
-<arg>${result_expected}</arg>
-<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="PASS" start="2024-10-26T14:17:41.031435" elapsed="0.455015"/>
+<status status="PASS" start="2024-10-26T14:24:55.484071" elapsed="0.495292"/>
 </kw>
 <arg>4</arg>
-<arg>0</arg>
-<arg>0</arg>
-<status status="PASS" start="2024-10-26T14:17:35.586409" elapsed="5.900041"/>
+<arg>2</arg>
+<arg>2</arg>
+<status status="PASS" start="2024-10-26T14:24:49.999228" elapsed="5.980135"/>
 </kw>
 <kw name="Limpar calculadora" owner="capabilities" type="TEARDOWN">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:41.486450" level="INFO">${clear} = accessibility_id=clear</msg>
+<msg time="2024-10-26T14:24:55.979363" level="INFO">${clear} = accessibility_id=clear</msg>
 <var>${clear}</var>
 <arg>accessibility_id=clear</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:41.486450" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:55.979363" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:41.486450" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
+<msg time="2024-10-26T14:24:55.979363" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
 <arg>${clear}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:41.486450" elapsed="1.229866"/>
+<status status="PASS" start="2024-10-26T14:24:55.979363" elapsed="1.271838"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:41.486450" elapsed="1.229866"/>
+<status status="PASS" start="2024-10-26T14:24:55.979363" elapsed="1.271838"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:35.586409" elapsed="7.129907"/>
+<status status="PASS" start="2024-10-26T14:24:49.999155" elapsed="7.262075"/>
 </test>
-<test id="s1-t5" name="TC005" line="16">
-<kw name="Multiplicacao dois numeros - 1 digito">
+<test id="s1-t4" name="TC004" line="15">
+<kw name="Divisao dois numeros - 1 digito">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:42.716316" level="INFO">${n1} = accessibility_id=6</msg>
+<msg time="2024-10-26T14:24:57.261230" level="INFO">${n1} = accessibility_id=9</msg>
 <var>${n1}</var>
 <arg>accessibility_id=${number_1}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:42.716316" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:57.261230" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:42.731975" level="INFO">Clicking element 'accessibility_id=6'.</msg>
+<msg time="2024-10-26T14:24:57.261230" level="INFO">Clicking element 'accessibility_id=9'.</msg>
 <arg>${n1}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:42.716316" elapsed="1.257767"/>
+<status status="PASS" start="2024-10-26T14:24:57.261230" elapsed="1.284940"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:43.974083" level="INFO">${multiply} = accessibility_id=multiply</msg>
-<var>${multiply}</var>
-<arg>accessibility_id=multiply</arg>
+<msg time="2024-10-26T14:24:58.546170" level="INFO">${divide} = accessibility_id=divide</msg>
+<var>${divide}</var>
+<arg>accessibility_id=divide</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:43.974083" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:58.546170" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:43.974083" level="INFO">Clicking element 'accessibility_id=multiply'.</msg>
-<arg>${multiply}</arg>
+<msg time="2024-10-26T14:24:58.546170" level="INFO">Clicking element 'accessibility_id=divide'.</msg>
+<arg>${divide}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:43.974083" elapsed="1.258294"/>
+<status status="PASS" start="2024-10-26T14:24:58.546170" elapsed="1.251564"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:45.232377" level="INFO">${n2} = accessibility_id=9</msg>
+<msg time="2024-10-26T14:24:59.797734" level="INFO">${n2} = accessibility_id=3</msg>
 <var>${n2}</var>
 <arg>accessibility_id=${number_2}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:45.232377" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:24:59.797734" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:45.232377" level="INFO">Clicking element 'accessibility_id=9'.</msg>
+<msg time="2024-10-26T14:24:59.813337" level="INFO">Clicking element 'accessibility_id=3'.</msg>
 <arg>${n2}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:45.232377" elapsed="1.280044"/>
+<status status="PASS" start="2024-10-26T14:24:59.813337" elapsed="1.277506"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:46.512421" level="INFO">${equals} = accessibility_id=equals</msg>
+<msg time="2024-10-26T14:25:01.090843" level="INFO">${equals} = accessibility_id=equals</msg>
 <var>${equals}</var>
 <arg>accessibility_id=equals</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:46.512421" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:25:01.090843" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:46.513521" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<msg time="2024-10-26T14:25:01.090843" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
 <arg>${equals}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:46.512421" elapsed="1.778345"/>
+<status status="PASS" start="2024-10-26T14:25:01.090843" elapsed="2.311480"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:48.290766" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:25:03.402323" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
 <var>${result}</var>
 <arg>id=com.google.android.calculator:id/result_final</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:48.290766" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:25:03.402323" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:48.290766" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '54'.</msg>
-<msg time="2024-10-26T14:17:48.768202" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<msg time="2024-10-26T14:25:03.402323" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '3'.</msg>
+<msg time="2024-10-26T14:25:03.883187" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
 <arg>${result}</arg>
 <arg>${result_expected}</arg>
 <doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="PASS" start="2024-10-26T14:17:48.290766" elapsed="0.477436"/>
+<status status="PASS" start="2024-10-26T14:25:03.402323" elapsed="0.480864"/>
 </kw>
-<arg>6</arg>
 <arg>9</arg>
-<arg>54</arg>
-<status status="PASS" start="2024-10-26T14:17:42.716316" elapsed="6.051886"/>
+<arg>3</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-10-26T14:24:57.261230" elapsed="6.621957"/>
 </kw>
 <kw name="Limpar calculadora" owner="capabilities" type="TEARDOWN">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-26T14:17:48.769227" level="INFO">${clear} = accessibility_id=clear</msg>
+<msg time="2024-10-26T14:25:03.883187" level="INFO">${clear} = accessibility_id=clear</msg>
 <var>${clear}</var>
 <arg>accessibility_id=clear</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-26T14:17:48.769227" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-26T14:25:03.883187" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-26T14:17:48.770258" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
+<msg time="2024-10-26T14:25:03.883187" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
 <arg>${clear}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-26T14:17:48.769227" elapsed="1.270096"/>
+<status status="PASS" start="2024-10-26T14:25:03.883187" elapsed="1.252761"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:48.768712" elapsed="1.270611"/>
+<status status="PASS" start="2024-10-26T14:25:03.883187" elapsed="1.252854"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:17:42.716316" elapsed="7.323007"/>
+<status status="PASS" start="2024-10-26T14:24:57.261230" elapsed="7.875066"/>
+</test>
+<test id="s1-t5" name="TC005" line="16">
+<kw name="Divisao dois numeros - 1 digito">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-26T14:25:05.137893" level="INFO">${n1} = accessibility_id=8</msg>
+<var>${n1}</var>
+<arg>accessibility_id=${number_1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-26T14:25:05.137340" elapsed="0.000553"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T14:25:05.138920" level="INFO">Clicking element 'accessibility_id=8'.</msg>
+<arg>${n1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T14:25:05.137893" elapsed="1.295998"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-26T14:25:06.433891" level="INFO">${divide} = accessibility_id=divide</msg>
+<var>${divide}</var>
+<arg>accessibility_id=divide</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-26T14:25:06.433891" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T14:25:06.433891" level="INFO">Clicking element 'accessibility_id=divide'.</msg>
+<arg>${divide}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T14:25:06.433891" elapsed="1.293457"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-26T14:25:07.727348" level="INFO">${n2} = accessibility_id=4</msg>
+<var>${n2}</var>
+<arg>accessibility_id=${number_2}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-26T14:25:07.727348" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T14:25:07.727348" level="INFO">Clicking element 'accessibility_id=4'.</msg>
+<arg>${n2}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T14:25:07.727348" elapsed="1.271438"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-26T14:25:08.998786" level="INFO">${equals} = accessibility_id=equals</msg>
+<var>${equals}</var>
+<arg>accessibility_id=equals</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-26T14:25:08.998786" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T14:25:09.014391" level="INFO">Clicking element 'accessibility_id=equals'.</msg>
+<arg>${equals}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T14:25:08.998786" elapsed="1.725555"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-26T14:25:10.724341" level="INFO">${result} = id=com.google.android.calculator:id/result_final</msg>
+<var>${result}</var>
+<arg>id=com.google.android.calculator:id/result_final</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-26T14:25:10.724341" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-10-26T14:25:10.739910" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '2'.</msg>
+<msg time="2024-10-26T14:25:11.188726" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<arg>${result}</arg>
+<arg>${result_expected}</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-10-26T14:25:10.724341" elapsed="0.464385"/>
+</kw>
+<arg>8</arg>
+<arg>4</arg>
+<arg>2</arg>
+<status status="PASS" start="2024-10-26T14:25:05.137340" elapsed="6.051386"/>
+</kw>
+<kw name="Limpar calculadora" owner="capabilities" type="TEARDOWN">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-26T14:25:11.188726" level="INFO">${clear} = accessibility_id=clear</msg>
+<var>${clear}</var>
+<arg>accessibility_id=clear</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-26T14:25:11.188726" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T14:25:11.188726" level="INFO">Clicking element 'accessibility_id=clear'.</msg>
+<arg>${clear}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T14:25:11.188726" elapsed="1.297460"/>
+</kw>
+<status status="PASS" start="2024-10-26T14:25:11.188726" elapsed="1.297460"/>
+</kw>
+<status status="PASS" start="2024-10-26T14:25:05.136799" elapsed="7.349387"/>
 </test>
 <kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-10-26T14:17:50.039323" elapsed="0.475838"/>
+<status status="PASS" start="2024-10-26T14:25:12.486186" elapsed="0.501797"/>
 </kw>
-<status status="PASS" start="2024-10-26T14:16:28.513942" elapsed="82.001219"/>
+<status status="PASS" start="2024-10-26T14:23:53.997799" elapsed="78.990184"/>
 </suite>
 <statistics>
 <total>
@@ -499,7 +499,7 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Multiplicacao">Multiplicacao</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="Divisao">Divisao</stat>
 </suite>
 </statistics>
 <errors>
